@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>McTrivia</title>
+    <link rel="stylesheet" href="../src/trivia.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="McDonald's EK 2024 voetbal Trivia">
+    <meta name="keywords" content="McDonald's, EK, 2024, voetbal, Trivia">
+    <link rel="icon" href="../img/logo.png" type="png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <section id="start-sec">
+    <header>
+        <img class="close" src="../img/close.png">
+        <img class="logo" src="../img/logo.png">
+        <img class="info" src="../img/info.png">
+    </header>
+    <div id="start-page">
+        <h1>McDonald’s EK 2024 voetbal Trivia</h1>
+        <a id="play-game" class="cmn-btn">Speel de game</a>
+        <div class="cards">
+            <img class="green" src="../img/yellow.png">
+            <img class="red" src="../img/red.png">
+        </div>
+        <img class="uefa" src="../img/uefa.svg">
+    
+    </div>
+  </section>
+
+    <div id="info-overlay">
+        <p>Maak je klaar om je voetbalkennis op de proef te stellen met de McDonald’s trivia game! Ter ere van het Europees Kampioenschap Voetbal 2024 lanceren we een leuk en interactief triviaspel waarbij je XP (ervaringspunten) kunt verdienen voor elk juist antwoord.</p>
+    </div>
+    
+    <section id="game-sec">
+      <div id="game-area">
+        <img class="logo-game" src="../img/logo.png">
+          <div id="progress"></div>
+          <img class="p-img" id="p-img" src="../img/placeholder.jpeg">
+        <div id="question-area"></div>
+        <div id="choices"></div>
+        <div id="game-overlay">
+          <h1 id="antwoord">Test Test</h1>
+          <div id="wrong-yellow"></div>
+          <a class="cmn-btn" id="next">Next Question</a>
+        </div>
+      </div>
+    </section>
+
+    <div id="end-page" style="display: none;">
+      <img class="logo-end" src="../img/logo.png">
+      <h1>Bedankt voor het spelen. Kom morgen terug voor nieuwe vragen </h1>
+      <h1 id="xp-sec">+ 300 XP</h1>
+      <div class="cards">
+          <img class="green" src="../img/yellow.png">
+          <img class="red" src="../img/red.png">
+      </div>
+      <a href="../index.html" id="play-game" class="cmn-btn">Verlaat Spel</a>
+  </div>
+  <!-- <script src="../vragen.json"></script> -->
+    <script src="../src/questions.js"></script> 
+    <script src="../src/trivia-old.js"></script>
+  </body>
+</html>

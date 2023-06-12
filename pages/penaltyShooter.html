@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Penalty Shooter</title>
+        <link href="../src/penaltyShooter.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://use.typekit.net/yko6nda.css">
+    </head>
+    <body>
+        <div class="containerEndGame">
+            <h1 id="endGameText">Je hebt gewonnen van </h1>
+            <button><a href="../index.html">Close Game</a></button>npm
+        </div>
+        <div class="contianer">
+            <div class="score">
+                <img id="team1Active" src="../img/NederlandseVlag.webp" style="border:5px solid green">
+                <p id="scoreNL"></p>
+                <p> - </p>
+                <p id="scoreSP"></p>
+                <img id="team2Active" src="../img/SpaanseVlag.webp">
+            </div>
+            <div id="containerGoalDivs">
+                <div class="containerPicker">
+                    <div id="goal_div_1" class="divs"></div>
+                    <div id="goal_div_2" class="divs"></div>
+                    <div id="goal_div_3" class="divs"></div>
+                    <div id="goal_div_4" class="divs"></div>
+                    <div id="goal_div_5" class="divs"></div>
+                    <div id="goal_div_6" class="divs"></div>
+                    <div id="goal_div_7" class="divs"></div>
+                    <div id="goal_div_8" class="divs"></div>
+                    <div id="goal_div_9" class="divs"></div>
+                    <div id="goal_div_10" class="divs"></div>
+                    <div id="goal_div_11" class="divs"></div>
+                    <div id="goal_div_12" class="divs"></div>
+                </div>
+            </div>
+            <div id="timer-container">
+                <div id="timer-bar"></div>
+            </div>
+            <div id="balID"></div>
+            <img src="../img/achtergrondZonderBal.png" >
+        </div>
+
+        <div class="containerPlayerPicker">
+            <div class="pickPlayer" onclick="playerSelection()">
+                <h2>Spelers</h2>
+            </div>
+            <div class="containerPlayerSelection hidden">
+                <div>
+                    <img onclick="pickedPlayer(1, -2)" src="../img/players/Thomas Müller.png" class="playerClass">
+                </div>
+                <div>
+                    <img onclick="pickedPlayer(2)" src="../img/players/Andriy Yarmolenko.png" class="playerClass">
+                </div>
+                <div>
+                    <img onclick="pickedPlayer(3)" src="../img/players/Dimitrios Giannoulis.png" class="playerClass">
+                </div>
+                <div>
+                    <img onclick="pickedPlayer(4)" src="../img/players/Robert Lewandowski.png" class="playerClass">
+                </div>
+            </div>
+        </div>
+        <script src="../src/penaltyShooter.js" type="module"></script>
+        <script src="../src/anime.min.js" type="module"></script>
+    </body>
+</html>

@@ -1,0 +1,182 @@
+body {
+    font-family: "colfax-web", sans-serif;
+    font-style: bold;
+    margin: 0px;
+    padding: 0px;
+}
+.contianer img {
+    width: 100%;
+    height: 100vh;
+}
+.container {
+    z-index: 0;
+}
+
+.score {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+.score p {
+    font-size: 90px;
+    margin: 0;
+    padding: 0;
+}
+
+.score img {
+    display: flex;
+    width: 200px;
+    height: 130px;
+}
+
+.pickPlayer {
+    width: 30%;
+    height: 50px;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    background-color: #FDC100;
+}
+.containerPlayerPicker {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.containerPlayerSelection {
+    gap: 10px;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FDC100;
+    overflow: hidden;
+}
+
+.containerPlayerSelection img {
+    transition: transform .5s ease;
+}
+.containerPlayerSelection img:hover {
+    transform: scale(1.05);
+}
+
+.playerClass {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+#containerGoalDivs {
+    position: absolute;
+    width: 620px;
+    height: 300px;
+    left: 17.5%;
+}
+
+.containerPicker {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 25%); /* creates 4 columns with equal width */
+    grid-template-rows: repeat(3, auto);
+    top: 815px;
+    width: 100%;
+    grid-gap: 5px;
+}
+
+.containerPicker .divs {
+    background-color: #FDC100;
+    height: 80px;
+  }
+
+.containerEndGame {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    background-color: #FDC100;
+  }
+   .containerEndGame button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* Score timing bar */
+#timer-container {
+    width: 30px;
+    height: 300px;
+    border: 1px solid #ccc;
+    background-color: red;
+    overflow: hidden;
+    top: 800px;
+    right: 40px;
+    position: absolute;
+  }
+
+  #timer-bar {
+    width: 100%;
+    height: 0%;
+    background-color: #4caf50;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+/* ball id */
+#balID {
+    position: absolute;
+    height: 100px;
+    bottom: 400px;
+    left: 45%;
+}
+#balID img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Scoored or missed visuals. */
+.result {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: bold;
+    color: #004811;
+    -webkit-text-stroke: #FDC100 2px;
+}
+
+.result-animation {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    font-weight: bold;
+    color: #004811;
+    -webkit-text-stroke: #FDC100 2px;
+    opacity: 0;
+    animation-name: result-animation;
+    animation-duration: 1s;
+}
+
+  @keyframes result-animation {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(2);
+    }
+  }
